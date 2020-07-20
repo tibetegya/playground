@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .foo {
+      color: hsl(0, 64%, 65%);
+    }
+  </style>
+</head>
+<body>
+  <div class="foo bar" id="foo" data-foo="tibzy" data-foo-bar="kampala" data-fooBar="nakawa" data-bar="george">
+    Hello
+  </div>
+  <input type="text" name="foo" id="foo">
+  <script>
+    input = document.querySelector('input')
+    input.onclick = function (e) {
+      console.log('input is', e)
+    }.bind(input)
+  </script>
+</body>
+</html>
